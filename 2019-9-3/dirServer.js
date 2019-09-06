@@ -5,7 +5,7 @@ const fs = require("fs");
 const url = require("url");
 const path = require("path");
 
-/**创建一个服务器 */
+/**创建一个服务器 只要有http请求，访问端口，就会执行回调函数里面的内容 */
 var server = http.createServer(function(req/**请求对象 */,res/**响应对象 */){
     // console.log(req.url);
     var urlObj = url.parse(req.url);
