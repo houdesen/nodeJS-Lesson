@@ -1,0 +1,19 @@
+1.点击超链接
+发起的是http的get请求
+<a href="localhost:8081/login?username = zhangsan&pwd = 123">
+    登录
+</a>
+get的 url 里面的数据必须是不敏感的数据
+
+?参数名=参数值&参数名=参数值&参数名=参数值
+
+
+
+
+2.可以通过ajax发起请求
+$.get(url,function(data){});
+
+
+
+3.POST向服务器发送数据，以POST向服务器端发送的数据
+存储的HTTP请求体里面，直接通过URL是看不到的。
